@@ -1,0 +1,56 @@
+
+<html>
+<head>
+    <title>Cadastro de Consultas</title>
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+<body>
+    <div id = "header">
+        <img src = "imagem/Marcas UFRPE-06.jpg" alt = "">
+        <div>
+           <center> <h1> Agendamento para atendimento psicológico </h1>
+            <p> Este lugar foi feito com intuito da realização do agendamento para consutas com o psicológo da UFRPE-Uabj</p> </center>
+        </div>
+       
+    </div>
+    <div id="container">
+        <div id="headerImages">
+           
+           <center> <img src = "imagem/simboloDePsicologia.jpg" alt = ""></center>
+        </div>
+        <h2>Cadastro de Psicólogo ou Cliente</h2>
+        <form id="cadastroForm">
+            <label for="tipo">Tipo de Usuário:</label>
+            <select id="tipo" name="tipo">
+                <option value="psicologo">Psicólogo</option>
+                <option value="cliente">Cliente</option>
+            </select>
+
+            <div id="psicologoDiv">
+                <label for="emailPsicologo">Email (Psicólogo):</label>
+                <input type="email" id="emailPsicologo" name="emailPsicologo" required>
+                <label for="senhaPsicologo">Senha (Psicólogo):</label>
+                <input type="password" id="senhaPsicologo" name="senhaPsicologo">
+            </div>
+
+            <div id="clienteDiv">
+                <label for="telefoneCliente">Telefone (Cliente):</label>
+                <input type="tel" id="telefoneCliente" name="telefoneCliente" required>
+                <label for="senhaCliente">Senha (Cliente):</label>
+                <input type="password" id="senhaCliente" name="senhaCliente">
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <div id = "footer">
+         <span>Para qualquer dúvidas, entre em contato com: <a href= "https://e-psi.cfp.org.br/ajuda/" target="_blank">aqui</a></span>
+    </div>
+
+    <script src = "script.js"></script>
+
+
+</body>
+</html>

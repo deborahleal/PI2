@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Consultas</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+<body>
+    <h1>Cadastro de Consultas</h1>
+    <form id="consultaForm">
+        <label for="tipoUsuario">Escolha o tipo de usuário:</label>
+        <select id="tipoUsuario" required>
+            <option value="cliente">Cliente</option>
+            <option value="psicologo">Psicólogo</option>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required><br><br>
+
+        <label for="nomePaciente">Nome do Paciente:</label>
+        <input type="text" id="nomePaciente" required><br><br>
+
+        <label for="dataConsulta">Data da Consulta:</label>
+        <input type="date" id="dataConsulta" required><br><br>
+
+        <label for="descricaoConsulta">Descrição da Consulta:</label>
+        <textarea id="descricaoConsulta" required></textarea><br><br>
+
+        <button type="submit">Cadastrar Consulta</button>
+    </form>
+
+    <div id="mensagens"></div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
